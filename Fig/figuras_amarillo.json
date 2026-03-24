@@ -1,0 +1,216 @@
+{
+  "inicio": "inicio",
+  "preguntas": {
+    "inicio": {
+      "tipo": "pregunta",
+      "texto": "Cuantos lados tiene la figura?",
+      "opciones": ["0", "3", "4", "5", "6", "8", "10"]
+    },
+    "curva": {
+      "tipo": "pregunta",
+      "texto": "Todos los puntos del borde estan a la misma distancia del centro?",
+      "opciones": ["si", "no"]
+    },
+    "triangulo_lados": {
+      "tipo": "pregunta",
+      "texto": "Todos sus lados son iguales?",
+      "opciones": ["si", "no"]
+    },
+    "triangulo_dos_lados": {
+      "tipo": "pregunta",
+      "texto": "Tiene exactamente dos lados iguales?",
+      "opciones": ["si", "no"]
+    },
+    "triangulo_angulo": {
+      "tipo": "pregunta",
+      "texto": "Tiene un angulo recto?",
+      "opciones": ["si", "no"]
+    },
+    "cuadrilatero_iguales": {
+      "tipo": "pregunta",
+      "texto": "Todos sus lados son iguales?",
+      "opciones": ["si", "no"]
+    },
+    "cuadrilatero_rectos": {
+      "tipo": "pregunta",
+      "texto": "Todos sus angulos son rectos?",
+      "opciones": ["si", "no"]
+    },
+    "cuadrilatero_rectos_opuestos": {
+      "tipo": "pregunta",
+      "texto": "Todos sus angulos son rectos?",
+      "opciones": ["si", "no"]
+    },
+    "cuadrilatero_paralelos": {
+      "tipo": "pregunta",
+      "texto": "Tiene dos pares de lados paralelos?",
+      "opciones": ["si", "no"]
+    },
+    "cuadrilatero_un_par": {
+      "tipo": "pregunta",
+      "texto": "Tiene exactamente un par de lados paralelos?",
+      "opciones": ["si", "no"]
+    },
+    "trapecio_recto": {
+      "tipo": "pregunta",
+      "texto": "Tiene un angulo recto?",
+      "opciones": ["si", "no"]
+    },
+    "poligono_5": {
+      "tipo": "pregunta",
+      "texto": "Todos sus lados y angulos son iguales?",
+      "opciones": ["si", "no"]
+    },
+    "poligono_6": {
+      "tipo": "pregunta",
+      "texto": "Todos sus lados y angulos son iguales?",
+      "opciones": ["si", "no"]
+    },
+    "poligono_8": {
+      "tipo": "pregunta",
+      "texto": "Todos sus lados y angulos son iguales?",
+      "opciones": ["si", "no"]
+    },
+    "poligono_10": {
+      "tipo": "pregunta",
+      "texto": "La figura parece una estrella de cinco puntas?",
+      "opciones": ["si", "no"]
+    },
+    "poligono_10_regular": {
+      "tipo": "pregunta",
+      "texto": "Todos sus lados y angulos son iguales?",
+      "opciones": ["si", "no"]
+    },
+    "circulo": {
+      "tipo": "resultado",
+      "nombre": "Circulo"
+    },
+    "elipse": {
+      "tipo": "resultado",
+      "nombre": "Elipse"
+    },
+    "triangulo_equilatero": {
+      "tipo": "resultado",
+      "nombre": "Triangulo equilatero"
+    },
+    "triangulo_isosceles": {
+      "tipo": "resultado",
+      "nombre": "Triangulo isosceles"
+    },
+    "triangulo_rectangulo": {
+      "tipo": "resultado",
+      "nombre": "Triangulo rectangulo"
+    },
+    "triangulo_escaleno": {
+      "tipo": "resultado",
+      "nombre": "Triangulo escaleno"
+    },
+    "cuadrado": {
+      "tipo": "resultado",
+      "nombre": "Cuadrado"
+    },
+    "rombo": {
+      "tipo": "resultado",
+      "nombre": "Rombo"
+    },
+    "rectangulo": {
+      "tipo": "resultado",
+      "nombre": "Rectangulo"
+    },
+    "romboide": {
+      "tipo": "resultado",
+      "nombre": "Romboide"
+    },
+    "trapecio": {
+      "tipo": "resultado",
+      "nombre": "Trapecio"
+    },
+    "trapecio_rectangulo": {
+      "tipo": "resultado",
+      "nombre": "Trapecio rectangulo"
+    },
+    "cuadrilatero_irregular": {
+      "tipo": "resultado",
+      "nombre": "Cuadrilatero irregular"
+    },
+    "pentagono_regular": {
+      "tipo": "resultado",
+      "nombre": "Pentagono regular"
+    },
+    "pentagono_irregular": {
+      "tipo": "resultado",
+      "nombre": "Pentagono irregular"
+    },
+    "hexagono_regular": {
+      "tipo": "resultado",
+      "nombre": "Hexagono regular"
+    },
+    "hexagono_irregular": {
+      "tipo": "resultado",
+      "nombre": "Hexagono irregular"
+    },
+    "octagono_regular": {
+      "tipo": "resultado",
+      "nombre": "Octagono regular"
+    },
+    "octagono_irregular": {
+      "tipo": "resultado",
+      "nombre": "Octagono irregular"
+    },
+    "estrella_cinco_puntas": {
+      "tipo": "resultado",
+      "nombre": "Estrella de cinco puntas"
+    },
+    "decagono_regular": {
+      "tipo": "resultado",
+      "nombre": "Decagono regular"
+    },
+    "decagono_irregular": {
+      "tipo": "resultado",
+      "nombre": "Decagono irregular"
+    }
+  },
+  "transiciones": [
+    {"desde": "inicio", "respuesta": "0", "hacia": "curva"},
+    {"desde": "inicio", "respuesta": "3", "hacia": "triangulo_lados"},
+    {"desde": "inicio", "respuesta": "4", "hacia": "cuadrilatero_iguales"},
+    {"desde": "inicio", "respuesta": "5", "hacia": "poligono_5"},
+    {"desde": "inicio", "respuesta": "6", "hacia": "poligono_6"},
+    {"desde": "inicio", "respuesta": "8", "hacia": "poligono_8"},
+    {"desde": "inicio", "respuesta": "10", "hacia": "poligono_10"},
+
+    {"desde": "curva", "respuesta": "si", "hacia": "circulo"},
+    {"desde": "curva", "respuesta": "no", "hacia": "elipse"},
+
+    {"desde": "triangulo_lados", "respuesta": "si", "hacia": "triangulo_equilatero"},
+    {"desde": "triangulo_lados", "respuesta": "no", "hacia": "triangulo_dos_lados"},
+    {"desde": "triangulo_dos_lados", "respuesta": "si", "hacia": "triangulo_isosceles"},
+    {"desde": "triangulo_dos_lados", "respuesta": "no", "hacia": "triangulo_angulo"},
+    {"desde": "triangulo_angulo", "respuesta": "si", "hacia": "triangulo_rectangulo"},
+    {"desde": "triangulo_angulo", "respuesta": "no", "hacia": "triangulo_escaleno"},
+
+    {"desde": "cuadrilatero_iguales", "respuesta": "si", "hacia": "cuadrilatero_rectos"},
+    {"desde": "cuadrilatero_iguales", "respuesta": "no", "hacia": "cuadrilatero_paralelos"},
+    {"desde": "cuadrilatero_rectos", "respuesta": "si", "hacia": "cuadrado"},
+    {"desde": "cuadrilatero_rectos", "respuesta": "no", "hacia": "rombo"},
+    {"desde": "cuadrilatero_paralelos", "respuesta": "si", "hacia": "cuadrilatero_rectos_opuestos"},
+    {"desde": "cuadrilatero_paralelos", "respuesta": "no", "hacia": "cuadrilatero_un_par"},
+    {"desde": "cuadrilatero_un_par", "respuesta": "si", "hacia": "trapecio_recto"},
+    {"desde": "cuadrilatero_un_par", "respuesta": "no", "hacia": "cuadrilatero_irregular"},
+    {"desde": "trapecio_recto", "respuesta": "si", "hacia": "trapecio_rectangulo"},
+    {"desde": "trapecio_recto", "respuesta": "no", "hacia": "trapecio"},
+    {"desde": "cuadrilatero_rectos_opuestos", "respuesta": "si", "hacia": "rectangulo"},
+    {"desde": "cuadrilatero_rectos_opuestos", "respuesta": "no", "hacia": "romboide"},
+
+    {"desde": "poligono_5", "respuesta": "si", "hacia": "pentagono_regular"},
+    {"desde": "poligono_5", "respuesta": "no", "hacia": "pentagono_irregular"},
+    {"desde": "poligono_6", "respuesta": "si", "hacia": "hexagono_regular"},
+    {"desde": "poligono_6", "respuesta": "no", "hacia": "hexagono_irregular"},
+    {"desde": "poligono_8", "respuesta": "si", "hacia": "octagono_regular"},
+    {"desde": "poligono_8", "respuesta": "no", "hacia": "octagono_irregular"},
+    {"desde": "poligono_10", "respuesta": "si", "hacia": "estrella_cinco_puntas"},
+    {"desde": "poligono_10", "respuesta": "no", "hacia": "poligono_10_regular"},
+    {"desde": "poligono_10_regular", "respuesta": "si", "hacia": "decagono_regular"},
+    {"desde": "poligono_10_regular", "respuesta": "no", "hacia": "decagono_irregular"}
+  ]
+}
