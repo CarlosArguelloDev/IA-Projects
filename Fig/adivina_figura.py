@@ -2,18 +2,18 @@
 # EQUIPO AMARILLO
 
 import sys
-import yaml
+import json
 from pathlib import Path
 
-RUTA_FIGURAS = Path(__file__).parent / "datos" / "figuras.yaml"
+RUTA_FIGURAS = Path(__file__).parent / "datos" / "figuras.json"
 
 
 def cargar_grafo(ruta: Path) -> tuple[dict, dict]:
-    # R004: Carga preguntas y transiciones {(origen, respuesta): destino}
+    # Carga preguntas y transiciones {(origen, respuesta): destino}
     if not ruta.exists(): sys.exit(f"[Error] No existe '{ruta}'")
 
     with open(ruta, "r", encoding="utf-8") as f:
-        datos = yaml.safe_load(f)
+        datos = json.load(f)
 
     trans = {(str(o), str(r)): str(d) for o, r, d in datos["transiciones"]}
     return datos["preguntas"], trans
@@ -29,7 +29,7 @@ def pedir_respuesta(opciones: list) -> str:
 
 
 def recorrer_grafo(preguntas: dict, tabla: dict) -> str:
-    # R005: Navega el grafo usando el dict (sin if-else)
+    # Navega el grafo usando el dict 
     nodo = "A"
     while True:
         ops = [r for (o, r) in tabla if o == nodo]
