@@ -1,4 +1,4 @@
-# entrenador.py - R006
+# entrenador
 # El supervisor etiqueta mensajes como spam o no_spam
 
 import yaml

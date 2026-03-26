@@ -1,5 +1,5 @@
-# adivina_figura.py - R004 / R005
-# Clasificador de figuras usando grafos sin if-else (dict traversal)
+# Razonamiento Monótono con grafos.
+# EQUIPO AMARILLO
 
 import sys
 import yaml

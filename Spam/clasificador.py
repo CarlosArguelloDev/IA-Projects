@@ -1,4 +1,4 @@
-# clasificador.py - R008
+# clasificador
 # Filtra mensajes nuevos usando 5 metodos de consenso (democracia)
 
 import re

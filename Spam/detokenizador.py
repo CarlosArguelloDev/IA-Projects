@@ -1,4 +1,4 @@
-# detokenizador.py - R007
+# detokenizador.py
 # Tokeniza mensajes y calcula probabilidades con Laplace
 
 import re

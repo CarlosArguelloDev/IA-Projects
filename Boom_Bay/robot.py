@@ -1,5 +1,5 @@
-# robot.py - R010 / R011
 # Agente busca bombas en zigzag usando inferencia bayesiana
+# EQUIPO AMARILLO
 
 import yaml
 from pathlib import Path

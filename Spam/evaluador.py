@@ -1,4 +1,4 @@
-# evaluador.py - R009
+# evaluador
 # Compara predicciones contra ground truth y genera metricas
 
 import yaml

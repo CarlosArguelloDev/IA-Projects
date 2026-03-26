@@ -1,7 +1,5 @@
-# tablero.yaml
 # Mapa de Boome: cada fila es una lista de casillas.
 # 0 = casilla vacia, 1 = casilla con bomba.
-# Se puede modificar libremente para cambiar el escenario.
 
 fila_A: [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
 fila_B: [0, 0, 0, 0, 0, 0, 0, 1, 0, 0]

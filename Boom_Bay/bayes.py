@@ -1,5 +1,4 @@
-# bayes.py
-# Motor matematico de Bayes (independiente de la logica del agente)
+# Motor matematico de Bayes
 
 import random
 
