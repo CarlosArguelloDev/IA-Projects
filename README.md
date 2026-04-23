@@ -1,7 +1,3 @@
 # IA Projects
 This repository contains IA/ML projects 
-## Unity 2
-- Clasificador de figuras geometricas usando razonamiento monotono con grafo
-- Agente de busqueda bayesiana de bombas en un tablero (Boome + Bayes)
-- Sistema experto tipo adivina-quien usando redes semanticas y teoria de la informacion
-- Clasificador de spam basado en probabilidad condicional y metodo de consenso
+
